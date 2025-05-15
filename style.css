@@ -301,6 +301,8 @@ body {
   .whatsapp-btn {
     justify-content: center;
   }
+  
+
 }
 
 /* business-suite */
@@ -536,6 +538,12 @@ body {
   text-align: center;
   width: 100px;
   margin: 0 auto; /* <-- This line centers it horizontally */
+}
+.hero-content h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #000; /* Keep all text black */
 }
 .card-image {
   width: 100%;

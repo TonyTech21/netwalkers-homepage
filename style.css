@@ -6,12 +6,21 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: white;
-    font-size: 100%;
-    line-height: 1.5;
-    overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, white 0%, #f5faff 40%, #e6f2ff 70%, #cce6ff 100%);
+  font-size: 100%;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: shimmerSky 30s ease infinite;
 }
+@keyframes shimmerSky {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 /* NEWS TICKER */
 .news-ticker {
@@ -47,7 +56,7 @@ body {
   color: #ffffff;
   font-size: 0.85em;
   white-space: nowrap;
-  animation: scroll 65s linear infinite;
+ text-align: center;
   flex: 1;
 }
 
@@ -202,7 +211,7 @@ small{
   overflow: hidden;
   z-index: 101;
   position: relative;
-  font-size: x-small;
+  font-size: xx-small;
 }
 .nav-content {
    display: flex;
@@ -254,7 +263,7 @@ small{
   justify-content: space-between;
   gap: 1rem;
   padding: 0.5em;
-  background: #fff;
+  background: none;
   flex-wrap: nowrap; 
   text-align: center;
 }

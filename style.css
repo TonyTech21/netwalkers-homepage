@@ -404,6 +404,7 @@ body {
   padding: 1.1em;
   transition: all 0.4s ease-in-out;
   flex: 0 0 calc((100% - 40px) / 3);
+  scroll-snap-align: center;
 }
 
 
@@ -531,6 +532,7 @@ body {
   .card {
     width: 45%;
     flex: 0 0 100%;
+    scroll-snap-align: center;
   }
 }
 
@@ -670,6 +672,7 @@ body {
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       padding: 1rem;
+      scroll-snap-align: center;
     }
 
     .card img {
@@ -683,6 +686,7 @@ body {
       .card {
         flex: 0 0 32%;
         max-width: 32%;
+        scroll-snap-align: center;
       }
     }
 
@@ -739,6 +743,7 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   padding: 1rem;
   scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .card-image {
@@ -751,6 +756,7 @@ body {
 @media (min-width: 768px) {
   .card {
     flex: 0 0 calc(33.3333% - 1rem);
+    scroll-snap-align: center;
   }
 }
 
@@ -798,3 +804,5 @@ body {
 .dot.active {
   background: #007fff;
 }
+
+

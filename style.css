@@ -353,6 +353,7 @@ small{
 .business-units {
   max-width: 1400px;
   margin: auto;
+ 
 }
 
 .section-title {
@@ -621,8 +622,8 @@ small{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
-  margin-top: 0.1em;
+  gap: 0.6em;
+  margin-top: 0.5em;
   font-size: 1.5em;
   
 }
@@ -656,7 +657,7 @@ small{
   .dot.active { background: #333; }
 
 .slider-section {
-      padding: 40px 20px;
+      padding: 10px 5px;
       max-width: 1200px;
       margin: auto;
     }

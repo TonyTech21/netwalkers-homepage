@@ -60,12 +60,12 @@ body {
 
 .news-text {
   color: #ffffff;
-  font-size: 0.85em;
+  font-size: 0.75em;
   white-space: nowrap;
  text-align: left;
   flex: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .mobile-break {
     display: block;
   }
@@ -513,7 +513,7 @@ small{
 .buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.3em;
+  gap: 0.4em;
 }
 
 .btn {
@@ -604,7 +604,7 @@ small{
     width: 100%;
   }
   .buttons{
-    padding: 0.3rem;
+    padding: 0.2rem;
   }
   .section-title {
   display: flex;
@@ -624,7 +624,7 @@ small{
   padding: 0.7em;
   border-radius: 8px;
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 600;
   text-align: left;
   display: flex;
@@ -641,7 +641,7 @@ small{
   padding: 0.7em;
   border-radius: 8px;
   color: #fff;
-  font-size: small;
+  font-size: 0.8em;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -1066,5 +1066,5 @@ i {
 }
 i{
   color: white!important;
-  font-size: medium;
+  font-size: 0.9em;
 }

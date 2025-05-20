@@ -26,10 +26,15 @@ body {
 .news-ticker {
   width: 100%;
   height: 2em;
-  background: #4a4c52;
+   background: linear-gradient(to right, #4a4c52, #5a5c63);
   overflow: hidden;
   z-index: 101;
-  position: relative;
+   position: sticky;
+  padding: 5px;
+     position: sticky;
+  top: 0;
+  z-index: 9999; 
+   
 }
 
 .news-content {
@@ -38,6 +43,7 @@ body {
   height: 100%;
   padding: 0 1em;
   gap: 0.8em;
+  
 }
 
 .news-icon,
@@ -56,8 +62,13 @@ body {
   color: #ffffff;
   font-size: 0.85em;
   white-space: nowrap;
- text-align: center;
+ text-align: left;
   flex: 1;
+}
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
 }
 
 @keyframes scroll {
@@ -74,8 +85,8 @@ body {
    width: 100%;
     height: 5em;
       position: sticky;
-      top: 0;
-      z-index: 1000;
+        top: 2.0em; 
+  z-index: 9998; 
       background: linear-gradient(to right, #0073e6, #0180FF);
       background-image:
         linear-gradient(to right, #0073e6, #0180FF),
@@ -176,7 +187,21 @@ body {
 
 /* MOBILE NAV */
 @media (max-width: 768px) {
-   
+   .main-nav {
+   width: 100%;
+    height: 5em;
+      position: sticky;
+        top: 2.5em; 
+  z-index: 9998; 
+      background: linear-gradient(to right, #0073e6, #0180FF);
+      background-image:
+        linear-gradient(to right, #0073e6, #0180FF),
+        url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-blend-mode: overlay;
+      animation: stars 3s linear infinite;
+      clip-path: polygon(0 0, 100% 0, 100% 79%, 50% 100%, 0 79%);
+      
+    }
 .mobile-menu {
     position: fixed;
     top: 6.5em;
@@ -206,12 +231,14 @@ small{
  
   .news-ticker {
   width: 100%;
-  height: 3em;
+  height: 4em;
   background: #4a4c52;
   overflow: hidden;
-  z-index: 101;
-  position: relative;
-  font-size: xx-small;
+    position: sticky;
+  top: 0;
+  z-index: 9990; 
+  
+  font-size: small;
 }
 .nav-content {
    display: flex;
@@ -597,7 +624,7 @@ small{
   padding: 0.7em;
   border-radius: 8px;
   color: #fff;
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 600;
   text-align: left;
   display: flex;
@@ -1010,6 +1037,7 @@ i {
 
   .footer-column ul li {
     text-align: left;
+    font-size: small;
   }
 
   .footer-bottom {
@@ -1035,4 +1063,8 @@ i {
     font-weight: 600;
     font-size: x-small;
   }
+}
+i{
+  color: white!important;
+  font-size: medium;
 }

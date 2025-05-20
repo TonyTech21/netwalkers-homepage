@@ -292,35 +292,84 @@ small{
   font-size: 2.1rem;
   font-weight: 850;
   line-height: 1.4;
-  color: #001a33; /* Keep all text black */
   font-family: 'Poppins', 'Helvetica', 'Arial', 'Lucida', sans-serif;
+
+  background: linear-gradient(
+    90deg,
+    #001a33,
+    #005bb5,
+    #001a33,
+    #005bb5,
+    #001a33
+  );
+  background-size: 300% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: animateText 5s linear infinite;
 }
 
+@keyframes animateText {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 300% center;
+  }
+}
+
+
+
 .whatsapp-btn {
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   padding: 1rem 2rem;
-  background-color: #007fff;
+  background: linear-gradient(135deg, #007fff,   #005cb3
+);
   border: none;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.6rem;
   cursor: pointer;
-  box-shadow: 0 8px 20px 0 rgba(0, 127, 255, 0.5);  
+  box-shadow: 0 8px 20px rgba(0, 127, 255, 0.4);
   transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
+
+.whatsapp-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: skewX(-30deg);
+  transition: left 0.5s ease;
+}
+
+.whatsapp-btn:hover::before {
+  left: 120%;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 127, 255, 0.6);
+}
+
 
 .whatsapp-btn i {
   font-size: 1.2rem;
 }
 
 .whatsapp-btn:hover {
-  background-color: #1ebe5b;
+  background-color: lightblue;
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 12px 30px ligh(37, 211, 102, 0.35);
 }
 
 .hero-image {
@@ -377,12 +426,34 @@ small{
   }
 
   .hero-content h1 {
-    font-size: 1.7rem;
-  font-weight: 790;
+  font-size: 1.8rem;
+  font-weight: 800;
   line-height: 1.4;
-  color: #001a33; /* Keep all text black */
   font-family: 'Poppins', 'Helvetica', 'Arial', 'Lucida', sans-serif;
+
+  background: linear-gradient(
+    90deg,
+    #001a33,
+    #005bb5,
+    #001a33,
+    #005bb5,
+    #001a33
+  );
+  background-size: 300% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: animateText 5s linear infinite;
+}
+
+@keyframes animateText {
+  0% {
+    background-position: 0% center;
   }
+  100% {
+    background-position: 300% center;
+  }
+}
 
   .whatsapp-btn {
     justify-content: center;
